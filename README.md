@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+🎉 Next.js Authentication Project 🚀
+Welcome to the Next.js Authentication Project! This application provides user authentication using NextAuth, supporting both credential-based login/signup and third-party providers (Google, LinkedIn, GitHub). It integrates with a PostgreSQL database hosted on Vercel and uses Drizzle ORM for seamless database interactions.
 
-## Getting Started
+📦 Features
+🔐 Credential-based authentication: Users can sign up and log in using their email and password.
+🌐 Third-party login: Supports authentication via Google, LinkedIn, and GitHub.
+💾 Database Integration: Uses PostgreSQL for data storage.
+⚙️ ORM: Drizzle ORM for handling database operations.
+🛠️ Getting Started
+Prerequisites
+🧑‍💻 Node.js: Version 14 or higher.
+🗄️ PostgreSQL Database: Set up and hosted on Vercel.
+🚀 Vercel Account: For PostgreSQL hosting.
+Installation
+Clone the repository:
 
-First, run the development server:
+bash
+Copy code
+git clone https://github.com/your-username/your-repository.git
+cd your-repository
+Install dependencies:
 
-```bash
+bash
+Copy code
+npm install
+Set up environment variables:
+
+Create a .env.local file in the root directory and add the following variables:
+
+env
+Copy code
+NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_SECRET=your-nextauth-secret
+DATABASE_URL=your-postgresql-database-url
+Replace your-nextauth-secret with a secure secret for NextAuth and your-postgresql-database-url with the URL of your PostgreSQL database on Vercel.
+
+Run the development server:
+
+bash
+Copy code
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Your application will be accessible at http://localhost:3000.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🔐 Middleware Configuration
+Note: Middleware configuration is pending. For a secure application, you should configure NextAuth middleware to protect routes and manage authentication.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🚀 Usage
+Sign Up: Users can register using their email or sign up via Google, LinkedIn, or GitHub.
+Sign In: Existing users can log in using credentials or through third-party providers.
+🤝 Contributing
+We welcome contributions! To contribute:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Fork the repository.
+Create a new branch (git checkout -b feature/YourFeature).
+Commit your changes (git commit -am 'Add some feature').
+Push to the branch (git push origin feature/YourFeature).
+Create a new Pull Request.
+Ensure your code adheres to the project style and includes appropriate tests.
 
-## Learn More
+📜 License
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-To learn more about Next.js, take a look at the following resources:
+📧 Contact
+For questions or feedback, reach out to your-email@example.com.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Happy coding! 😊
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
