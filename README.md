@@ -18,8 +18,8 @@ Welcome to the Next.js Authentication Project! This application provides user au
 
 bash
 Copy code
-git clone https://github.com/your-username/your-repository.git
-cd your-repository
+git clone https://github.com/MTahaSh/next-auth-integration.git
+cd next-auth-integration
 Install dependencies:
 
 bash
